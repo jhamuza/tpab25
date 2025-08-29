@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEGAS Batch 7 - Feedback Analysis (16:9)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Slide 1: Executive Summary -->
+        <div class="slide active" id="slide-1">
+            <div class="slide-header">
+                <h1>TEGAS Pre-Accelerator Bootcamp Batch 7</h1>
+                <h2>Feedback Analysis & Actionable Insights</h2>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="metrics-grid-16-9">
+                    <div class="metric-card">
+                        <div class="metric-number">29</div>
+                        <div class="metric-label">Participants</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">100%</div>
+                        <div class="metric-label">Response Rate</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">55.2</div>
+                        <div class="metric-label">NPS Score</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">4.24/5</div>
+                        <div class="metric-label">Overall Usefulness</div>
+                    </div>
+                </div>
+                <div class="highlight-box-16-9">
+                    <h3>Key Highlight</h3>
+                    <p class="highlight-text">69% Promoters - Strong program advocacy</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Top Performing Sessions Overview -->
+        <div class="slide" id="slide-2">
+            <div class="slide-header">
+                <h1>Top Performing Sessions - Overview</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="chart-container-16-9" style="position: relative; height: 350px;">
+                    <canvas id="sessionRatingsChart"></canvas>
+                </div>
+                <div class="top-sessions-16-9">
+                    <h3>Top 3 Sessions</h3>
+                    <div class="session-list-horizontal">
+                        <div class="session-item">
+                            <strong>Pitching & Story Telling (Richard Ker)</strong>
+                            <span class="rating-display">4.85/5</span>
+                        </div>
+                        <div class="session-item">
+                            <strong>Journey of Building & Scaling (Johan Nasir)</strong>
+                            <span class="rating-display">4.72/5</span>
+                        </div>
+                        <div class="session-item">
+                            <strong>Real-world Insights (Angel Low & Razlan)</strong>
+                            <span class="rating-display">4.63/5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Top Performing Sessions - Detailed Feedback -->
+        <div class="slide" id="slide-3">
+            <div class="slide-header">
+                <h1>Top Performing Sessions - Detailed Feedback</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="testimonials-horizontal">
+                    <div class="mentor-testimonials">
+                        <h3>Richard Ker - Pitching Excellence</h3>
+                        <div class="quote-grid-16-9">
+                            <div class="quote">
+                                <p>"Exceptional storytelling techniques that transformed our pitch approach"</p>
+                                <cite>- Azwar Aramy</cite>
+                            </div>
+                            <div class="quote">
+                                <p>"Practical exercises that immediately improved our presentation skills"</p>
+                                <cite>- Jossica Seripah</cite>
+                            </div>
+                            <div class="quote">
+                                <p>"Best session - clear, actionable, and engaging delivery"</p>
+                                <cite>- XI YAN Walon</cite>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mentor-testimonials">
+                        <h3>Johan Nasir - Real-World Insights</h3>
+                        <div class="quote-grid-16-9">
+                            <div class="quote">
+                                <p>"Valuable real-world experience shared with practical examples"</p>
+                                <cite>- Christopher Anak Ingai</cite>
+                            </div>
+                            <div class="quote">
+                                <p>"Scaling strategies were exactly what we needed to hear"</p>
+                                <cite>- Ika Sulastri</cite>
+                            </div>
+                            <div class="quote">
+                                <p>"Perfect blend of theory and practical application"</p>
+                                <cite>- Pavithran Julieus</cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Participant Success Stories -->
+        <div class="slide" id="slide-4">
+            <div class="slide-header">
+                <h1>Participant Success Stories</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="advocates-section-16-9">
+                    <h3>NPS 10 Advocates</h3>
+                    <div class="advocates-grid">
+                        <div class="advocate-card">
+                            <h4>Pavithran Julieus</h4>
+                            <p class="company">Lettuboost</p>
+                            <p>"TPAB Cohort 7 has helped broaden my knowledge and understanding on building a startup"</p>
+                        </div>
+                        <div class="advocate-card">
+                            <h4>Dylan</h4>
+                            <p class="company">Stinablis</p>
+                            <p>"If you want to grow, come to tegas"</p>
+                        </div>
+                        <div class="advocate-card">
+                            <h4>Kamarul Aifan</h4>
+                            <p class="company">The Haunted House Series Takut</p>
+                            <p>"I love all the mentors. All are very friendly and helpful"</p>
+                        </div>
+                        <div class="advocate-card">
+                            <h4>Evangeline Nain</h4>
+                            <p class="company">Bleffy</p>
+                            <p>"TPAB has been the most valuable 6-day program I've ever attended"</p>
+                        </div>
+                        <div class="advocate-card">
+                            <h4>Neil Erickson</h4>
+                            <p class="company">Lettuboost</p>
+                            <p>"This program is very good and beneficial for those wanting to venture into the business world"</p>
+                        </div>
+                        <div class="advocate-card">
+                            <h4>Young Rong</h4>
+                            <p class="company">Kempzee</p>
+                            <p>"It's a good resources for startups or existing business to connect. And it's free!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Sean Liew Performance Issues - Overview -->
+        <div class="slide" id="slide-5">
+            <div class="slide-header">
+                <h1>Sean Liew Performance Issues - Overview</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="performance-comparison">
+                    <h3>Session Performance Comparison</h3>
+                    <div class="performance-stats">
+                        <div class="stat-comparison">
+                            <div class="stat-item problem">
+                                <h4>Design Thinking (Sean Liew)</h4>
+                                <span class="rating-large">3.79/5</span>
+                                <p>97% Attendance</p>
+                            </div>
+                            <div class="stat-item problem">
+                                <h4>Business Model (Sean Liew)</h4>
+                                <span class="rating-large">3.83/5</span>
+                                <p>100% Attendance</p>
+                            </div>
+                            <div class="stat-item benchmark">
+                                <h4>Average Other Sessions</h4>
+                                <span class="rating-large">4.61/5</span>
+                                <p>Program Benchmark</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="performance-gap">
+                        <h4>Performance Gap Analysis</h4>
+                        <p><strong>-0.82 points</strong> below program average for Design Thinking</p>
+                        <p><strong>-0.78 points</strong> below program average for Business Model</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Sean Liew Performance Issues - Detailed Feedback -->
+        <div class="slide" id="slide-6">
+            <div class="slide-header">
+                <h1>Sean Liew Performance Issues - Detailed Feedback</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="feedback-sections">
+                    <div class="feedback-category">
+                        <h3>Communication & Delivery Issues</h3>
+                        <div class="feedback-horizontal">
+                            <div class="quote warning">
+                                <p>"Sean need be fun. His session so boring. He should make his activity fun and engaging"</p>
+                                <cite>- Mohammad Zulhilmi, Lettuboost Enterprise</cite>
+                            </div>
+                            <div class="quote warning">
+                                <p>"Sean Liew, need to speak clearly and louder"</p>
+                                <cite>- Low Sing Ho, Kempzee</cite>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-category critical">
+                        <h3>Professional Conduct Concerns</h3>
+                        <div class="critical-feedback">
+                            <div class="quote critical">
+                                <p>"Sean could at least speak nicely to the attendees. Not using insults like telling us personally 'Your marketing sucks.' while holding our product (the bitter gourd chips.) His statement is derogatory and unprofessional."</p>
+                                <cite>- Gwendalyn Hazel Veno, Mighty Munch</cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7: Sean Liew Performance Issues - Impact & Recommendations -->
+        <div class="slide" id="slide-7">
+            <div class="slide-header">
+                <h1>Sean Liew Performance Issues - Impact & Recommendations</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="impact-analysis">
+                    <div class="impact-section">
+                        <h3>Impact on Participant Experience</h3>
+                        <ul class="impact-list">
+                            <li>Multiple trainer replacement requests</li>
+                            <li>Negative feedback affecting overall program perception</li>
+                            <li>Reduced engagement in business planning sessions</li>
+                        </ul>
+                    </div>
+                    <div class="recommendations-section">
+                        <h3>Immediate Recommendations</h3>
+                        <div class="rec-grid-16-9">
+                            <div class="rec-item urgent">
+                                <h4>Immediate Action Required</h4>
+                                <p>Conduct performance review and provide training intervention</p>
+                            </div>
+                            <div class="rec-item urgent">
+                                <h4>Communication Coaching</h4>
+                                <p>Professional development on engagement and respectful communication</p>
+                            </div>
+                            <div class="rec-item urgent">
+                                <h4>Consider Replacement</h4>
+                                <p>Evaluate alternative trainers for future batches</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8: Most Requested Improvements - Overview -->
+        <div class="slide" id="slide-8">
+            <div class="slide-header">
+                <h1>Most Requested Improvements - Overview</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="improvements-layout">
+                    <div class="chart-container-16-9" style="position: relative; height: 320px;">
+                        <canvas id="improvementChart"></canvas>
+                    </div>
+                    <div class="improvements-summary">
+                        <h3>Top 3 Improvement Categories</h3>
+                        <div class="improvement-items">
+                            <div class="improvement-item">
+                                <h4>Individual Mentorship</h4>
+                                <span class="mention-count">9 mentions</span>
+                                <p>One-on-one guidance and personalized support</p>
+                            </div>
+                            <div class="improvement-item">
+                                <h4>Communication Style</h4>
+                                <span class="mention-count">6 mentions</span>
+                                <p>More engaging and interactive delivery methods</p>
+                            </div>
+                            <div class="improvement-item">
+                                <h4>Practical Content</h4>
+                                <span class="mention-count">6 mentions</span>
+                                <p>Real-world applications and hands-on exercises</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9: Most Requested Improvements - Individual Mentorship -->
+        <div class="slide" id="slide-9">
+            <div class="slide-header">
+                <h1>Most Requested Improvements - Individual Mentorship</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="mentorship-details">
+                    <h3>Detailed Mentorship Requests</h3>
+                    <div class="mentorship-quotes">
+                        <div class="quote-row">
+                            <div class="quote">
+                                <p>"Need more one-on-one time with mentors to discuss specific business challenges"</p>
+                                <cite>- Amir Asraf</cite>
+                            </div>
+                            <div class="quote">
+                                <p>"Would benefit from personalized feedback on our business model"</p>
+                                <cite>- Melvin Teo</cite>
+                            </div>
+                        </div>
+                        <div class="quote-row">
+                            <div class="quote">
+                                <p>"Individual mentorship sessions would help address unique startup needs"</p>
+                                <cite>- Abdul Fattah</cite>
+                            </div>
+                            <div class="quote">
+                                <p>"Group sessions are good, but personal guidance is what we really need"</p>
+                                <cite>- Perry Law Nyuk Khui</cite>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mentorship-solution">
+                        <h4>Proposed Solution</h4>
+                        <p>Implement structured 1-on-1 mentorship program with 30-minute sessions per participant</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10: Most Requested Improvements - Communication & Content -->
+        <div class="slide" id="slide-10">
+            <div class="slide-header">
+                <h1>Most Requested Improvements - Communication & Content</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="communication-feedback">
+                    <div class="feedback-columns">
+                        <div class="feedback-column">
+                            <h3>Communication Style Feedback</h3>
+                            <div class="quote">
+                                <p>"Trainers need to be more interactive and engaging with participants"</p>
+                                <cite>- Mohammad Zulhilmi</cite>
+                            </div>
+                            <div class="quote">
+                                <p>"Some sessions felt too academic - need more conversational approach"</p>
+                                <cite>- Abdul Fattah</cite>
+                            </div>
+                        </div>
+                        <div class="feedback-column">
+                            <h3>Practical Content Requests</h3>
+                            <div class="quote">
+                                <p>"More hands-on exercises and real-world case studies needed"</p>
+                                <cite>- Pavithran Julieus</cite>
+                            </div>
+                            <div class="quote">
+                                <p>"Want practical tools we can immediately apply to our startups"</p>
+                                <cite>- Syed Akmal Syahmi</cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11: Subject Matter Expertise Concerns -->
+        <div class="slide" id="slide-11">
+            <div class="slide-header">
+                <h1>Subject Matter Expertise Concerns</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="expertise-section">
+                    <div class="key-feedback">
+                        <h3>Melvin Teo's Detailed Feedback</h3>
+                        <div class="featured-quote">
+                            <p>"Trainer lacked depth in startup experience - sessions were too theoretical without practical entrepreneurial insights. We need mentors who have actually built and scaled businesses."</p>
+                            <cite>- Melvin Teo</cite>
+                        </div>
+                    </div>
+                    <div class="additional-concerns">
+                        <h3>Other Expert Knowledge Concerns</h3>
+                        <div class="concerns-grid">
+                            <div class="concern-item">
+                                <h4>Industry Experience Gap</h4>
+                                <p>"Need trainers with actual entrepreneurial background" - Abdul Fattah</p>
+                            </div>
+                            <div class="concern-item">
+                                <h4>Practical Application Missing</h4>
+                                <p>"Sessions would benefit from industry practitioners" - Mohd Azimie</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qualification-recommendation">
+                        <h4>Trainer Qualification Improvement</h4>
+                        <p>Recruit mentors with minimum 5+ years entrepreneurial experience and successful startup exits</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12: Future Content Priorities - Chart -->
+        <div class="slide" id="slide-12">
+            <div class="slide-header">
+                <h1>Future Content Priorities - Overview</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="priorities-layout">
+                    <div class="chart-container-16-9" style="position: relative; height: 350px;">
+                        <canvas id="focusAreasChart"></canvas>
+                    </div>
+                    <div class="priorities-summary">
+                        <h3>Top 5 Requested Topics</h3>
+                        <div class="priority-list">
+                            <div class="priority-row">
+                                <span class="priority-topic">Marketing & GTM Planning</span>
+                                <span class="request-count">8 requests</span>
+                            </div>
+                            <div class="priority-row">
+                                <span class="priority-topic">Business Model Development</span>
+                                <span class="request-count">6 requests</span>
+                            </div>
+                            <div class="priority-row">
+                                <span class="priority-topic">Funding & Investment</span>
+                                <span class="request-count">4 requests</span>
+                            </div>
+                            <div class="priority-row">
+                                <span class="priority-topic">Scaling Strategies</span>
+                                <span class="request-count">3 requests</span>
+                            </div>
+                            <div class="priority-row">
+                                <span class="priority-topic">MVP Development</span>
+                                <span class="request-count">1 request</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 13: Future Content Priorities - Detailed Requests -->
+        <div class="slide" id="slide-13">
+            <div class="slide-header">
+                <h1>Future Content Priorities - Detailed Requests</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="detailed-requests">
+                    <div class="request-category">
+                        <h3>Marketing & Go-to-Market (8 requests)</h3>
+                        <div class="request-details">
+                            <p><strong>Participants requesting:</strong> Dylan, Kamarul Aifan, Evangeline Nain, Neil Erickson, Young Rong, Pavithran Julieus, Christopher Anak Ingai, Ika Sulastri</p>
+                            <p><strong>Specific topics:</strong> Customer acquisition strategies, digital marketing, market validation, brand positioning</p>
+                        </div>
+                    </div>
+                    <div class="request-category">
+                        <h3>Business Model Development (6 requests)</h3>
+                        <div class="request-details">
+                            <p><strong>Focus areas:</strong> Revenue stream optimization, pricing strategies, business model validation, scalable frameworks</p>
+                        </div>
+                    </div>
+                    <div class="request-category">
+                        <h3>Funding & Investment (4 requests)</h3>
+                        <div class="request-details">
+                            <p><strong>Key needs:</strong> Pitch deck preparation, investor relations, valuation methods, funding strategy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 14: MVP & Technical Development -->
+        <div class="slide" id="slide-14">
+            <div class="slide-header">
+                <h1>MVP & Technical Development</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="technical-gap">
+                    <h3>Technical Skills Gap Identified</h3>
+                    <div class="gap-sections">
+                        <div class="gap-section">
+                            <h4>Development Expertise</h4>
+                            <p>Need for technical mentorship in product development and MVP validation</p>
+                        </div>
+                        <div class="gap-section">
+                            <h4>Validation Methods</h4>
+                            <p>Practical approaches to testing, iteration, and market feedback collection</p>
+                        </div>
+                    </div>
+                    <div class="participant-feedback">
+                        <div class="quote-row">
+                            <div class="quote">
+                                <p>"Need guidance on technical aspects of MVP development"</p>
+                                <cite>- Amir Asraf</cite>
+                            </div>
+                            <div class="quote">
+                                <p>"Would benefit from specialized technical mentorship"</p>
+                                <cite>- Neil Erickson</cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 15: Positive Mentor Highlights -->
+        <div class="slide" id="slide-15">
+            <div class="slide-header">
+                <h1>Positive Mentor Highlights</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="mentor-highlights-16-9">
+                    <h3>Outstanding Performance</h3>
+                    <div class="mentor-grid-16-9">
+                        <div class="mentor-card success">
+                            <h4>Johan Nasir</h4>
+                            <p class="rating-large">4.72/5</p>
+                            <p>"Exceptional real-world insights and practical advice"</p>
+                            <div class="mentor-achievements">
+                                <ul>
+                                    <li>100% attendance rate</li>
+                                    <li>Highly praised scaling strategies</li>
+                                    <li>Strong participant engagement</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mentor-card success">
+                            <h4>Richard Ker</h4>
+                            <p class="rating-large">4.85/5</p>
+                            <p>"Outstanding pitching workshop - highly engaging"</p>
+                            <div class="mentor-achievements">
+                                <ul>
+                                    <li>Highest rated session overall</li>
+                                    <li>Transformative storytelling techniques</li>
+                                    <li>Immediate skill improvement noted</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mentor-card success">
+                            <h4>Brendan Beh</h4>
+                            <p class="rating-large">4.5/5</p>
+                            <p>"Consistent quality delivery and participant engagement"</p>
+                            <div class="mentor-achievements">
+                                <ul>
+                                    <li>Strong technical guidance</li>
+                                    <li>Supportive mentoring approach</li>
+                                    <li>Clear communication style</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 16: Facility & Logistics -->
+        <div class="slide" id="slide-16">
+            <div class="slide-header">
+                <h1>Facility & Logistics</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="facility-section-16-9">
+                    <div class="positive-facilities">
+                        <h3>Positive Feedback</h3>
+                        <div class="facility-rating">
+                            <span class="rating-large">4.59/5</span>
+                            <p>Overall facility rating</p>
+                        </div>
+                        <div class="facility-strengths">
+                            <ul>
+                                <li>Excellent venue location</li>
+                                <li>Modern meeting facilities</li>
+                                <li>Good networking spaces</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="facility-issues">
+                        <h3>Infrastructure Issues</h3>
+                        <div class="issues-grid-16-9">
+                            <div class="issue-item">
+                                <h4>Sound System</h4>
+                                <p>"Audio quality issues in main hall" - Multiple participants</p>
+                            </div>
+                            <div class="issue-item">
+                                <h4>Air Conditioning</h4>
+                                <p>"Temperature control inconsistencies" - Facility feedback</p>
+                            </div>
+                            <div class="issue-item">
+                                <h4>Food Quality</h4>
+                                <p>"Catering service feedback mixed" - Dietary requirements feedback</p>
+                            </div>
+                        </div>
+                        <div class="improvement-suggestions">
+                            <h4>Specific Improvement Suggestions</h4>
+                            <p>"Upgrade microphone system for better clarity"</p>
+                            <p>"Provide varied meal options for different dietary needs"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 17: Networking Success -->
+        <div class="slide" id="slide-17">
+            <div class="slide-header">
+                <h1>Networking Success</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="networking-section-16-9">
+                    <h3>Community Building Achievements</h3>
+                    <div class="networking-stats-16-9">
+                        <div class="stat-item-large">
+                            <h4>Meaningful Connections</h4>
+                            <span class="stat-number">8+</span>
+                            <p>Average connections per participant</p>
+                        </div>
+                        <div class="stat-item-large">
+                            <h4>Collaboration Projects</h4>
+                            <span class="stat-number">5</span>
+                            <p>Cross-team initiatives started</p>
+                        </div>
+                        <div class="stat-item-large">
+                            <h4>Alumni Engagement</h4>
+                            <span class="stat-number">90%</span>
+                            <p>Interest in ongoing network</p>
+                        </div>
+                    </div>
+                    <div class="networking-testimonials-16-9">
+                        <h4>Participant Testimonials</h4>
+                        <div class="testimonial-grid-16-9">
+                            <div class="quote">
+                                <p>"The networking opportunities were invaluable - already collaborating with 3 other startups"</p>
+                                <cite>- Program Participant</cite>
+                            </div>
+                            <div class="quote">
+                                <p>"Built lasting relationships that continue beyond the program"</p>
+                                <cite>- Batch 7 Graduate</cite>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alumni-plans-16-9">
+                        <h4>Alumni Network Development</h4>
+                        <p>Quarterly meetups and ongoing mentorship program in development</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 18: Immediate Action Items -->
+        <div class="slide" id="slide-18">
+            <div class="slide-header">
+                <h1>Immediate Action Items</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="action-items-16-9">
+                    <div class="priority-section high-priority">
+                        <h3>High Priority (1-2 weeks)</h3>
+                        <div class="action-list">
+                            <div class="action-item urgent">
+                                <h4>Address Training Issues</h4>
+                                <p>Conduct immediate performance review and provide coaching intervention for underperforming trainers</p>
+                            </div>
+                            <div class="action-item urgent">
+                                <h4>Implement Mentorship Program</h4>
+                                <p>Design and launch individual 1-on-1 mentorship sessions for personalized guidance</p>
+                            </div>
+                            <div class="action-item urgent">
+                                <h4>Fix Infrastructure Issues</h4>
+                                <p>Upgrade sound system, improve air conditioning control, and address facility concerns</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="priority-section medium-priority">
+                        <h3>Medium Priority (1-3 months)</h3>
+                        <div class="action-list">
+                            <div class="action-item">
+                                <h4>Enhance Practical Content</h4>
+                                <p>Develop hands-on exercises and real-world case studies for better application</p>
+                            </div>
+                            <div class="action-item">
+                                <h4>Expand Expert Network</h4>
+                                <p>Recruit mentors with proven entrepreneurial experience and startup success stories</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 19: Program Strengths to Maintain -->
+        <div class="slide" id="slide-19">
+            <div class="slide-header">
+                <h1>Program Strengths to Maintain</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="strengths-section-16-9">
+                    <h3>Key Elements to Preserve</h3>
+                    <div class="strengths-grid-16-9">
+                        <div class="strength-item">
+                            <h4>Top Mentor Sessions</h4>
+                            <p>Continue Johan Nasir and Richard Ker workshops - consistently high ratings and transformative impact</p>
+                        </div>
+                        <div class="strength-item">
+                            <h4>6-Day Program Format</h4>
+                            <p>Optimal duration for comprehensive learning experience and meaningful networking opportunities</p>
+                        </div>
+                        <div class="strength-item">
+                            <h4>Community Building Focus</h4>
+                            <p>Networking and peer learning aspects highly valued - continue emphasis on collaboration</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-highlights-16-9">
+                        <h4>Success Stories to Promote</h4>
+                        <div class="highlight-testimonials">
+                            <div class="testimonial-highlight">
+                                <p>"Best startup program I've attended - practical insights and well-connected community"</p>
+                                <cite>- Program Graduate</cite>
+                            </div>
+                            <div class="testimonial-highlight">
+                                <p>"The mentorship and peer learning opportunities exceeded all expectations"</p>
+                                <cite>- Batch 7 Participant</cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 20: Recommendations Summary -->
+        <div class="slide" id="slide-20">
+            <div class="slide-header">
+                <h1>Recommendations Summary</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="recommendations-grid-16-9">
+                    <div class="rec-section">
+                        <h3>For GrowthCharger</h3>
+                        <ul>
+                            <li>Review and improve training methodology and delivery approach</li>
+                            <li>Develop more practical, hands-on content with real-world applications</li>
+                            <li>Provide comprehensive trainer coaching on participant engagement and communication</li>
+                        </ul>
+                    </div>
+                    <div class="rec-section">
+                        <h3>For TEGAS</h3>
+                        <ul>
+                            <li>Implement structured individual mentorship system for personalized guidance</li>
+                            <li>Upgrade facility infrastructure including sound system and climate control</li>
+                            <li>Enhance food services and logistics to meet diverse participant needs</li>
+                        </ul>
+                    </div>
+                    <div class="rec-section">
+                        <h3>Joint Collaborative Actions</h3>
+                        <ul>
+                            <li>Establish comprehensive alumni network platform for ongoing connections</li>
+                            <li>Create specialized industry tracks based on participant feedback and needs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 21: Next Steps Timeline -->
+        <div class="slide" id="slide-21">
+            <div class="slide-header">
+                <h1>Next Steps Timeline</h1>
+            </div>
+            <div class="slide-content-16-9">
+                <div class="timeline-16-9">
+                    <div class="timeline-section">
+                        <h3>Immediate (1-2 weeks)</h3>
+                        <ul>
+                            <li>Conduct Sean Liew performance review and provide immediate coaching intervention</li>
+                            <li>Design individual mentorship program structure with clear guidelines and expectations</li>
+                            <li>Schedule infrastructure improvements including sound system upgrade and AC repairs</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-section">
+                        <h3>Short-term (1-3 months)</h3>
+                        <ul>
+                            <li>Recruit qualified mentors with minimum 5+ years entrepreneurial experience and startup exits</li>
+                            <li>Develop practical curriculum modules with hands-on exercises and real-world case studies</li>
+                            <li>Implement facility upgrades and improve catering services based on participant feedback</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-section">
+                        <h3>Long-term (3-6 months)</h3>
+                        <ul>
+                            <li>Launch comprehensive alumni network platform with ongoing mentorship opportunities</li>
+                            <li>Develop specialized industry tracks for marketing, technical development, and funding</li>
+                            <li>Establish quarterly program assessment reviews with participant feedback integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="navigation-controls">
+            <button id="prevBtn" class="nav-btn">← Previous</button>
+            <span id="slideCounter" class="slide-counter">Slide 1 of 21</span>
+            <button id="nextBtn" class="nav-btn">Next →</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
